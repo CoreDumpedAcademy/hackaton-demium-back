@@ -1,4 +1,4 @@
-const trains = require('../viajes.json');
+console.log("hola");
 
 function getPriceFromTo(request, response){
     const from = request.params.from;

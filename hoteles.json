@@ -1,8 +1,8 @@
 {
-    "madrid":{
+    "madrid":[{
         "novo hotel": 25,
         "gran cinco estrellas": 45
-    },
+    }],
     "malaga":{
         "hotel good life": 35,
         "mira mar": 20

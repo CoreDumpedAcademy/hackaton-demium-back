@@ -12,3 +12,4 @@ viajes.json contine como claves las ciudades de origen. Dentro de cada ciudad te
 
 hoteles.json contine como clave las ciudades de destino. Dentro de cada ciudad tenemos las opcioens de hoteles disponibles con el precio de una habitacion disponible por persona. En caso de buscar habitaciones para varias personas multiplicamos el precio en la base de datos por el numero de personas.
 
+Para el manejo en tiempo real de las redes sociales asociadas a la pagina web hemos creado un modelo de red social con sus CRUD basica y unas rutas para poder llamar a las funciones. Todas las redes sociales que se generan se guardan en la base de datos de mongodb.
