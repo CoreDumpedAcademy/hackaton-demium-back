@@ -1,5 +1,8 @@
 # hackaton-demium-back
 
+**URL**
+   `localhost:3000/`
+
 Se utiliza Nodejs debido a su alta compatibilidad con librerias como mongose para el manejo de mongo. Es posible utilizarlo en una amplia gama de servidores entre los que estan Microsoft Windows o Unix y permitirá crear aplicaciones altamente escalables e innovadoras.
 
 Utilizaremos un modelo para los billetes ya que necesitaremos generarlos a partir de datos introducidos por el cliente en tiempo real.
@@ -14,7 +17,7 @@ hoteles.json contine como clave las ciudades de destino. Dentro de cada ciudad t
 
 Para el manejo en tiempo real de las redes sociales asociadas a la pagina web hemos creado un modelo de red social con sus CRUD basica y unas rutas para poder llamar a las funciones. Todas las redes sociales que se generan se guardan en la base de datos de mongodb.
 
-**Routes**
+***Social Net Routes***
 
 **Show specific social network**
     
@@ -60,3 +63,43 @@ Para el manejo en tiempo real de las redes sociales asociadas a la pagina web he
 
     `name=[String]`
     `link=[String]`
+
+**Update Social Net**
+    Finds social net by name and updates the associated link
+----
+* **URL**
+
+  `socialNet/update/:name`
+
+* **Method:**
+  
+  `UPDATE`
+  
+*  **URL Params**
+
+   **Required:**
+ 
+   `name=[String]`
+
+*  **Data Params**
+
+   **Requiered**
+
+   `link=[String]`
+
+**Delete Social Net**
+    Finds social net by name and deletes it from database
+----
+* **URL**
+
+  `socialNet/delete/:name`
+
+* **Method:**
+  
+  `DELETE`
+  
+*  **URL Params**
+
+   **Required:**
+ 
+   `name=[String]`
