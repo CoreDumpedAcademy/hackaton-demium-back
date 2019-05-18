@@ -1,4 +1,4 @@
-console.log("hola");
+const trains = require('../viajes.json');
 
 function getPriceFromTo(request, response){
     const from = request.params.from;
@@ -14,7 +14,6 @@ function getPriceFromTo(request, response){
         return response.status(404).send({msg: "destiny place not found"});
 
     people = parseInt(people, 10);
-    console.log(people);
     if(isNaN(people) || people < 1)
         return response.status(404).send({msg: "people parameter most be a number and greater than 0"});
 
