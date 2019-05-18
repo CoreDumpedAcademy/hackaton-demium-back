@@ -103,3 +103,98 @@ Para el manejo en tiempo real de las redes sociales asociadas a la pagina web he
    **Required:**
  
    `name=[String]`
+
+**Hotel Routes**
+---
+
+**Gives the price for a specific number of people during a centrain amount of time**
+    
+* **URL**
+
+   `/getPrice/:city/:people/:nights`
+
+* **Method:**
+
+   `GET`
+  
+* **URL Params**    
+
+  **Required:**
+
+    `city=[String]`
+    `people=[Number]`
+    `nights=[Number]`
+
+**Ticket Routes**
+---
+
+**Generates a ticket for a trip**
+    
+* **URL**
+
+   `/save`
+
+* **Method:**
+
+   `POST`
+  
+*  **Data Params**
+
+   **Requiered**
+
+   `name=[String]`
+   `surname=[String]`
+   `adults=[Number]`
+   `children=[Number]`
+   `price=[Number]`
+   `from=[String]`
+   `to=[String]`
+   `city=[String]`
+   `isTrain=[boolean]`
+
+**Generates a ticket for a trip**
+    
+* **URL**
+
+   `/all`
+
+* **Method:**
+
+   `GET`
+
+**Generates a ticket for a trip**
+    
+* **URL**
+
+   `/:ticketId`
+
+* **Method:**
+
+   `GET`
+  
+*  **Data Params**
+
+   **Requiered**
+
+   `ticketId=[String]`
+
+**Train Routes**
+---
+
+**Gives the price for a specific number of people about a trip**
+    
+* **URL**
+
+   `/getPrice/:from/:to/:people`
+
+* **Method:**
+
+   `GET`
+  
+* **URL Params**    
+
+  **Required:**
+
+    `from=[String]`
+    `to=[String]`
+    `people=[Number]`

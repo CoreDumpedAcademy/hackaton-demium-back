@@ -14,7 +14,7 @@ api.get('/test', (req, res)=>{
 });
 
 
-api.get('/getPrice/:city/:people/:nights', hotelController.GetFinalPrice);
+api.get('/getPrice/:city/:adults/:children/:nights', hotelController.GetFinalPrice);
 
 
 
