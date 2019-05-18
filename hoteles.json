@@ -1,0 +1,22 @@
+{
+    "Madrid":{
+        "NovoHotel": 25,
+        "GranCincoEstrellas": 45
+    },
+    "Malaga":{
+        "HotelGoodLife": 35,
+        "MiraMar": 20
+    },
+    "Barcelona":{
+        "HotelLux": 40,
+        "GoodDays": 15
+    },
+    "Granada":{
+        "Marinad´or": 22,
+        "SummerHotel": 43
+    },
+    "Pamplona":{
+        "HappyDreamVacation": 32,
+        "HotelGranPamplona": 28
+    }
+}
