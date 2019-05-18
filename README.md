@@ -17,7 +17,8 @@ hoteles.json contine como clave las ciudades de destino. Dentro de cada ciudad t
 
 Para el manejo en tiempo real de las redes sociales asociadas a la pagina web hemos creado un modelo de red social con sus CRUD basica y unas rutas para poder llamar a las funciones. Todas las redes sociales que se generan se guardan en la base de datos de mongodb.
 
-***Social Net Routes***
+**Social Net Routes**
+---
 
 **Show specific social network**
     
@@ -35,7 +36,7 @@ Para el manejo en tiempo real de las redes sociales asociadas a la pagina web he
 
     `name=[String]`
 
-  **Show all social network**
+**Show all social network**
     
 * **URL**
 
@@ -46,8 +47,7 @@ Para el manejo en tiempo real de las redes sociales asociadas a la pagina web he
    `GET`
 
 **Save new social network**
-    
-    (link param stores URL of the acount you want to reference)
+    link param stores URL of the acount you want to reference
 
 * **URL**
 
@@ -66,7 +66,7 @@ Para el manejo en tiempo real de las redes sociales asociadas a la pagina web he
 
 **Update Social Net**
     Finds social net by name and updates the associated link
-----
+
 * **URL**
 
   `socialNet/update/:name`
@@ -89,7 +89,7 @@ Para el manejo en tiempo real de las redes sociales asociadas a la pagina web he
 
 **Delete Social Net**
     Finds social net by name and deletes it from database
-----
+
 * **URL**
 
   `socialNet/delete/:name`
