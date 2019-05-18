@@ -1,13 +1,15 @@
 const bodyParser = require('body-parser');
 const express = require('express');
-const userRoutes = require('./routes/userRoutes');
+const hotelRoutes = require('./routes/hotelRoutes');
+const trainRoutes = require('./routes/trainRoutes');
 
 const app = express();
 
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use('/user', userRoutes);
+app.use('/hotel', hotelRoutes);
+app.use('/train', trainRoutes);
 
 
 module.exports = app;
