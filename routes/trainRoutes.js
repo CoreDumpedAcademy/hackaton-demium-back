@@ -16,7 +16,8 @@ api.get('/getPrice/:from/:to/:people', (req, res)=>{
     var people = parseInt(req.params.people, 10);
     var price = 10;
     price *= people;
-    res.status(200).send({ message: price});
+    res.status(200).send({ from: req.params.from, to: req.params.to,
+         people: people, price: price});
 });
 /*
 api.post('/signup', userController.signUp);
