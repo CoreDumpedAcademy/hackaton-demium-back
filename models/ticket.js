@@ -11,7 +11,7 @@ const ticketSchema = new Schema({
   from: { type : String, default : null },
   to: { type : String, default : null },
   city: { type : String, default : null },
-  isTrain: { type : Boolean, required : true}
+  isTrain: { type : Boolean }
 });
 
 module.exports = mongoose.model('ticket', ticketSchema);

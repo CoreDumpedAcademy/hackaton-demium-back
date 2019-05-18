@@ -10,8 +10,8 @@ function getPriceFromTo(request, response){
     if(!trainsFrom)
         return response.status(404).send({msg: "origin place not found"});
 
-    let price = trainsFrom[to.toLowerCase()];
-    if(!price)
+    let cityTrains = trainsFrom[to.toLowerCase()];
+    if(!cityTrains)
         return response.status(404).send({msg: "destiny place not found"});
         
     adults = parseInt(adults, 10);
@@ -22,14 +22,21 @@ function getPriceFromTo(request, response){
     if(isNaN(children))
         return response.status(404).send({msg: "children parameter must be a number"});
 
-    price = adults * price + Math.floor(children * price * 0.5);
+    // price = adults * price + Math.floor(children * price * 0.5);
+
+    let listTrain = {};
+    let price;
+    for(const train in cityTrains) {
+        price = cityTrains[train] * adults + Math.floor(cityTrains[train] * children * 0.5);
+        listTrain[train] = price;
+    }
 
     return response.status(200).send({
         from: from,
         to: to,
         adults: adults,
         children: children,
-        price: price
+        price: listTrain,
     });
 }
 
