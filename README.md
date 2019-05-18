@@ -3,11 +3,29 @@
 **URL**
    `localhost:3000/`
 
+**Desarrolladores**
+
+    Alfredo Martin de la Sierra Pinke, 
+    Angela Novoa Ramos, 
+    Raúl Álvarez Ruiz, 
+    Miguel Barragan Rodriguez, 
+    Mathias Nicolas, 
+    Alvez Bonilla, 
+    Flaviu Bogdan Condor, 
+    Luis de la Cal García, 
+    Luis Pozo Gilo, 
+    Carlos Pozuelo Rivas, 
+    Daniel Chambi Campos
+
+**Tecnologias**
+
 Se utiliza Nodejs debido a su alta compatibilidad con librerias como mongose para el manejo de mongo. Es posible utilizarlo en una amplia gama de servidores entre los que estan Microsoft Windows o Unix y permitirá crear aplicaciones altamente escalables e innovadoras.
 
 Utilizaremos un modelo para los billetes ya que necesitaremos generarlos a partir de datos introducidos por el cliente en tiempo real.
 
 Para rellenar con datos de prueba a partir del modelo de billetes utilizamos Postman, que permite hacer pruebas de las crud basicas y comprobar el correcto funcionamiento de las funciones del controlador.
+
+***Bases de datos**
 
 Estamos utilzando dos archivos json como base de datos principal.
 
@@ -219,3 +237,5 @@ To stop the service in background type
 ```
 sudo docker-compose down
 ```
+
+   After deployment the api is connected on port `80` instead of `3000`
