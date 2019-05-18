@@ -1,22 +1,22 @@
 {
-    "Madrid":{
-        "NovoHotel": 25,
-        "GranCincoEstrellas": 45
+    "madrid":{
+        "novo hotel": 25,
+        "gran cinco estrellas": 45
     },
-    "Malaga":{
-        "HotelGoodLife": 35,
-        "MiraMar": 20
+    "malaga":{
+        "hotel good life": 35,
+        "mira mar": 20
     },
-    "Barcelona":{
-        "HotelLux": 40,
-        "GoodDays": 15
+    "barcelona":{
+        "hotel lux": 40,
+        "good days": 15
     },
-    "Granada":{
-        "Marinad´or": 22,
-        "SummerHotel": 43
+    "granada":{
+        "marinador": 22,
+        "Summer hotel": 43
     },
-    "Pamplona":{
-        "HappyDreamVacation": 32,
-        "HotelGranPamplona": 28
+    "pamplona":{
+        "happy dream Vacation": 32,
+        "hotel gran pamplona": 28
     }
 }
