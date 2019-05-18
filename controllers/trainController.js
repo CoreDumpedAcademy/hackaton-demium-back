@@ -14,6 +14,7 @@ function getPriceFromTo(request, response){
     if(!price)
         return response.status(404).send({msg: "destiny place not found"});
 
+<<<<<<< HEAD
     adults = parseInt(adults, 10);
     if(isNaN(adults) || adults < 1)
         return response.status(404).send({msg: "adults parameter must be a number and greater than 0"});
@@ -23,6 +24,11 @@ function getPriceFromTo(request, response){
         return response.status(404).send({msg: "children parameter must be a number"});
 
     price = adults * price + Math.floor(children * price * 0.5);
+=======
+    people = parseInt(people, 10);
+    if(isNaN(people) || people < 1)
+        return response.status(400).send({msg: "people parameter most be a number and greater than 0"});
+>>>>>>> efb64b1765b09b59b0a30ad97390112b0245e31c
 
     return response.status(200).send({
         from: from,

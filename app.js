@@ -18,7 +18,7 @@ app.use(bodyParser.json());
 app.use('/hotel', hotelRoutes);
 app.use('/train', trainRoutes);
 app.use('/socialNet', socialNetRoutes);
-app.use('/tickets', ticketRoutes)
+app.use('/tickets', ticketRoutes);
 
 
 module.exports = app;
