@@ -15,7 +15,7 @@ function getPriceFromTo(request, response){
 
     people = parseInt(people, 10);
     if(isNaN(people) || people < 1)
-        return response.status(404).send({msg: "people parameter most be a number and greater than 0"});
+        return response.status(400).send({msg: "people parameter most be a number and greater than 0"});
 
     price *= people;
     return response.status(200).send({
