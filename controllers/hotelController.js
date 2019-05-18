@@ -9,16 +9,12 @@ function GetFinalPrice (req, res){
     
     var price = hotel[city.toLowerCase()]
 
-    money
-
     for (var key in price) {
         for (var money in price[key]) {
             price[key][money]= price[key][money] * people * nights;
         }
     }
-    /*price.forEach(element => {
-        console.log(value);
-    });*/
+
     res.status(200).send({
         price: price,
         people: people,
