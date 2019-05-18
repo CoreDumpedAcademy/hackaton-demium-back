@@ -1,5 +1,6 @@
 const express = require('express');
 const trainController = require('../controllers/trainController');
+const myjson = require('../viajes.json');
 
 const api = express.Router();
 
@@ -14,10 +15,11 @@ api.get('/test', (req, res)=>{
 });
 api.get('/getPrice/:from/:to/:people', (req, res)=>{
     var people = parseInt(req.params.people, 10);
-    var price = 10;
+    var from = req.params.from;
+    var to = req.params.to;
+    var price = myjson[from][to];
     price *= people;
-    res.status(200).send({ from: req.params.from, to: req.params.to,
-         people: people, price: price});
+    res.status(200).send({ from: from, to: to, people: people, price: price, json: myjson.Madrid});
 });
 /*
 api.post('/signup', userController.signUp);
