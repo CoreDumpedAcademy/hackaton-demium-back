@@ -17,7 +17,9 @@ api.get('/getPrice/:city/:people/:nights', (req, res)=>{
     var nights = parseInt(req.params.nights, 10);
     var price = 10;
     price *= people * nights;
-    res.status(200).send({ message: price });
+
+    res.status(200).send({ city: req.params.city, people: req.params.people, 
+        nights: req.params.nights, price: price });
 });
 /*api.post('/signup', userController.signUp);
 api.post('/login', userController.login);
