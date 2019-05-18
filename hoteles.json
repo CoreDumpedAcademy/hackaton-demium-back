@@ -1,12 +1,15 @@
 {
     "madrid":{
         "novo hotel": 25,
-        "gran cinco estrellas": 45
+        "gran cinco estrellas": 45,
+        "gran hotel epico":48,
+        "hotel alvarez":15,
+        "ping hotel":16
     },
     "malaga":{
         "hotel good life": 35,
         "mira mar": 20
-    },
+     },
     "barcelona":{
         "hotel lux": 40,
         "good days": 15
@@ -18,5 +21,189 @@
     "pamplona":{
         "happy dream Vacation": 32,
         "hotel gran pamplona": 28
+    },
+    "sevilla":{
+        "euro stars torre sevilla": 20,
+        "hotel doña manuela": 45
+    },
+    "almeria":{
+        "gran hotel": 49,
+        "hotel marina": 25
+    },
+    "vigo":{
+        "hotel carmiña": 38,
+        "hotel camariñas": 30
+    },
+    "coruña":{
+        "hotel carmen": 15,
+        "hotel carballiño": 20
+    },
+    "ourense":{
+        "grand hotel marina door": 18,
+        "gnd hotel": 85
+    },
+    "pontevedra":{
+        "costa hotel": 27,
+        "novoa hotel": 42
+    },
+    "tenerife":{
+        "guagua hotel": 12,
+        "hotel camel": 100
+    },
+    "alava":{
+        "hotel cristo": 12,
+        "grand hotel front": 100
+    },
+    "albacete":{
+        "hotel carlos": 42,
+        "hotel luis": 16
+    },
+    "alicante":{
+        "hotel alfredo": 78,
+        "grand flaviu": 12
+    },
+    "asturias":{
+        "faceless hotel": 13,
+        "miguel hotel": 74
+    },
+    "avila":{
+        "hotel mathias": 16,
+        "grand woxter": 46
+    },
+    "badajoz":{
+        "pochu hotel": 20,
+        "mariam hotel": 16
+    },
+    "burgos":{
+        "hotel osmak": 74,
+        "caesar hotel": 25
+    },
+    "caceres":{
+        "grand hotel nestor": 19,
+        "claudia hotel": 100
+    },
+    "cadiz":{
+        "jose javier hotel": 46,
+        "la casa de david": 89
+    },
+    "cantabria":{
+        "core hotel": 95,
+        "la casita de carla": 64
+    },
+    "castellon":{
+        "el caserio de agustin": 61,
+        "vice raul hotel": 16
+    }, 
+    "ciudad real":{
+        "hoy cenamos en casa": 15,
+        "grand hotel": 95
+    },
+    "cordoba":{
+        "invita luis": 98,
+        "carmen hotel": 20
+    },
+    "cuenca":{
+        "te duele el bolsillo": 90,
+        "head hotel": 70
+    },
+    "gerona":{
+        "one hotel": 94,
+        "hello hotel": 100
+    },
+    "guadalajara":{
+        "beauty hotel": 11,
+        "love hotel": 19
+    },
+    "guipuzcoa":{
+        "hen hotel": 97,
+        "hey hotel": 84
+    },
+    "huelva":{
+        "hotel feng": 46,
+        "dlc hotel": 84
+    },
+    "huesca":{
+        "epicidad hotel": 12,
+        "gran hotel epico": 19
+    },
+    "islas baleares":{
+        "hotel ruiz": 49,
+        "hotel momo": 100
+     },
+     "jaen":{
+         "gran hotel marina": 16,
+         "fuck yeah": 74
+     },
+     "leon":{
+         "mini hotel": 45,
+         "same hotel": 15
+     },
+     "lerida":{
+         "same old hotel": 46,
+         "old hotel": 16
+     },
+     "murcia":{
+         "not found": 404,
+         "lo siento no existe": 404
+     },
+     "navarra":{
+         "la barra hotel": 16,
+         "soy la caña": 100
+     },
+     "palencia":{
+         "me duele la vida": 19,
+         "life hotel": 11
+     },
+     "las palmas":{
+         "hey hotel": 75,
+         "one piece hotel": 120
+     },
+     "la rioja":{
+         "esto es caro": 150,
+         "no te fies": 160
+    },
+    "salamanca":{
+        "uni hotel": 41,
+        "hotel ca": 16
+    },
+    "segovia":{
+        "cañas hotel": 48,
+        "hack hotel": 12
+    },
+    "soria":{
+        "piece hotel": 14,
+        "carba hotel": 16
+    },
+    "tarragona":{
+        "hotel gold vs": 19,
+        "hotel dona": 48
+    },
+    "teruel":{
+        "hotel pozo": 78,
+        "hotel pinkie": 16
+    },
+    "toledo":{
+        "hotel katana": 87,
+        "hotel espada": 95
+    },
+    "valencia":{
+        "hotel barbera": 16,
+        "hotel deu": 97
+    },
+    "valladolid":{
+        "one gold hotel": 17,
+        "hotel car": 52
+    },
+    "vizcaya":{
+        "hotel piedra": 65,
+        "hotel agua": 88
+    },
+    "zamora":{
+        "hotel one piece rock": 56,
+        "hotel princesa": 65
+    },
+    "zaragoza":{
+        "hotel principe": 15,
+        "hotel rey": 16
     }
 }
