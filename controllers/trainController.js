@@ -5,11 +5,11 @@ function getPriceFromTo(request, response){
     const to = request.params.to;
     let people = request.params.people;
 
-    let trainsFrom = trains[from];
+    let trainsFrom = trains[from.toLowerCase()];
     if(!trainsFrom)
         return response.status(404).send({msg: "origin place not found"});
 
-    let price = trainsFrom[to];
+    let price = trainsFrom[to.toLowerCase()];
     if(!price)
         return response.status(404).send({msg: "destiny place not found"});
 
