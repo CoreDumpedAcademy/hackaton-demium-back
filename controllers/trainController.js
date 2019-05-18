@@ -3,7 +3,8 @@ const trains = require('../viajes.json');
 function getPriceFromTo(request, response){
     const from = request.params.from;
     const to = request.params.to;
-    let people = request.params.people;
+    let adults = request.params.adults;
+    let children = request.params.children;
 
     let trainsFrom = trains[from.toLowerCase()];
     if(!trainsFrom)
@@ -13,15 +14,21 @@ function getPriceFromTo(request, response){
     if(!price)
         return response.status(404).send({msg: "destiny place not found"});
 
-    people = parseInt(people, 10);
-    if(isNaN(people) || people < 1)
-        return response.status(404).send({msg: "people parameter most be a number and greater than 0"});
+    adults = parseInt(adults, 10);
+    if(isNaN(adults) || adults < 1)
+        return response.status(404).send({msg: "adults parameter must be a number and greater than 0"});
 
-    price *= people;
+    children = parseInt(children, 10);
+    if(isNaN(children))
+        return response.status(404).send({msg: "children parameter must be a number"});
+
+    price = adults * price + Math.floor(children * price * 0.5);
+
     return response.status(200).send({
         from: from,
         to: to,
-        people: people,
+        adults: adults,
+        children: children,
         price: price
     });
 }
