@@ -10,6 +10,6 @@ api.use((req, res, next) => {
   next();
 });*/
 
-api.get('/:from/:to/:people', trainController.getPriceFromTo);
+api.get('getPrice/:from/:to/:people', trainController.getPriceFromTo);
 
 module.exports = api;
