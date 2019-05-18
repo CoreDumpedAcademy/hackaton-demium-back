@@ -4,9 +4,12 @@ const Ticket = require('../models/ticket');
 function save(req, res) {
   const { name } = req.body;
   const { surname } = req.body;
-  const { numPeople } = req.body;
+  const { adults } = req.body;
+  const { children } = req.body;
   const { price } = req.body;
-  const { description } = req.body;
+  const { from } = req.body;
+  const { to } = req.body;
+  const { city } = req.body;
   const { isTrain } = req.body;
 
   // Checks if the ticket already exist
@@ -15,10 +18,13 @@ function save(req, res) {
 
     const ticket = new Ticket({
       name,
-      numPeople,
+      adults,
+      children,
       price,
       surname,
-      description,
+      from,
+      to,
+      city,
       isTrain,
     });
 
