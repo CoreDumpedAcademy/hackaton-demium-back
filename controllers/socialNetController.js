@@ -18,9 +18,9 @@ function saveSocial (req, res) {
 }
 
 function getSocial (req, res) {
-	let socialId = req.params.socialId
+	let name = req.params.name
 
-	Social.findById(socialId, (err, social) => {
+	Social.findOne( {name}, (err, social) => {
 		if (err) return res.status(500).send({message: `Error al realizar la petición: ${err}`})
 		if(!social) return res.status(404).send({message: 'La red social no existe'})
 	
@@ -50,9 +50,9 @@ function updateSocial (req, res) {
 }
 
 function deleteSocial (req, res) {
-	let socialId = req.params.socialId
+	let name = req.params.name
 
-	Social.findById(socialId, (err, social) => {
+	Social.findOneAndDelete( {name}, (err, social) => {
 		if(err) res.status(500).send({message: `Error al borrar la red social: ${err}`})
 		
 		social.remove(err => {

@@ -9,13 +9,11 @@ api.use((req, res, next) => {
   next();
 });
 
+api.get('/find/:name', socialNetController.getSocial);
 api.get('/all', socialNetController.getSocials);
-
 api.post('/save', socialNetController.saveSocial);
-
 api.put('/update/:name', socialNetController.updateSocial);
-
-api.delete('/delete/:socialId', socialNetController.deleteSocial);
+api.delete('/delete/:name', socialNetController.deleteSocial);
 
 
 module.exports = api;
