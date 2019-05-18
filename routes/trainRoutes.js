@@ -5,6 +5,6 @@ const myjson = require('../viajes.json');
 const api = express.Router();
 
 
-api.get('/:from/:to/:people', trainController.getPriceFromTo);
+api.get('getPrice/:from/:to/:people', trainController.getPriceFromTo);
 
 module.exports = api;
