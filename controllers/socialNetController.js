@@ -38,10 +38,11 @@ function getSocials (req, res) {
 }
 
 function updateSocial (req, res) {
-	let socialId = req.params.socialId
+	let name = req.params.name
 	let update = req.body
 
-	Social.findByIdAndUpdate(socialId, update, (err, socialUpdated) => {
+	console.log(update);
+	Social.findOneAndUpdate( {name}, update, (err, socialUpdated) => {
 		if(err) res.status(500).send({message: `Error al actualizar la red social: ${err}`})
 
 		res.status(200).send({ user: socialUpdated})
