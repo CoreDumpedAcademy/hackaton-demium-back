@@ -10,6 +10,7 @@ function saveSocial (req, res) {
 	let social = new Social()
 	social.name = req.body.name
 	social.link = req.body.link
+	social.icon = req.body.name
 
 	social.save((err, socialStored) => {
 		if(err) res.status(500).send({message: `Error al salvar la red social ${err}`})
@@ -40,6 +41,7 @@ function getSocials (req, res) {
 function updateSocial (req, res) {
 	let name = req.params.name
 	let update = req.body
+	update.icon = req.body.name
 
 	console.log(update);
 	Social.findOneAndUpdate( {name}, update, (err, socialUpdated) => {
