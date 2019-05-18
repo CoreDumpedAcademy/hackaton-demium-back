@@ -198,3 +198,24 @@ Para el manejo en tiempo real de las redes sociales asociadas a la pagina web he
     `from=[String]`
     `to=[String]`
     `people=[Number]`
+
+
+**Docker compose**
+---
+requirements:
+- docker
+- docker-compose
+
+Download the repository and, in the project folder, type
+```
+sudo docker-compose up
+```
+or
+```
+sudo docker-compose up -d
+```
+to execute in background.
+To stop the service in background type
+```
+sudo docker-compose down
+```
